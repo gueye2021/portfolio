@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Moussa GUEYE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <div class="brand">
+      <div class="logo">MG</div>
+      <div>
+        <div class="title">Moussa GUEYE</div>
+        <div class="subtitle">Développeur Web</div>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <div class="card intro">
+        <h1>Bonjour, je suis <span class="accent">Moussa GUEYE</span></h1>
+        <p>Étudiant en développement Web à l'Institut de Développement des Télécommunications basé au Sénégal. Passionné par l'informatique surtout le développement Web et Mobile, je souhaite avoir des bases solides à la création d'interfaces modernes et à l'apprentissage des technologies front-end et back-end.</p>
+        <div class="cta">
+          <button class="btn btn-primary" onclick="document.location='#projects'">Voir mes projets</button>
+          <button class="btn btn-ghost" onclick="document.location='#contact'">Me contacter</button>
+        </div>
+      </div>
+
+      <aside class="card profile">
+        <div class="avatar">MG</div>
+        <div class="name">Moussa GUEYE</div>
+        <div class="role">Développeur Web</div>
+        <div class="location">📍 Bargny, Sénégal</div>
+        <div>
+          <a href="https://www.senegal-online.com/tourisme_au_senegal/villes-et-villages-du-senegal/bargny/" target="_blank">Consulter la ville</a>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about">
+      <div class="card">
+        <h2 class="section-title">À propos de moi</h2>
+        <p>
+          <img src="photo.jpg" alt="campus"/>
+        </p>
+        <p>Étudiant passionné par le développement Web et Mobile. J’aime créer des interfaces modernes, propres, et fonctionnelles tout en apprenant continuellement les technologies front-end et back-end.</p>
+        <p> Mon Parcours
+          <a href="CV Moussa GUEYE.pdf" target="_blank">Voir CV</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="card">
+        <h2 class="section-title">Compétences</h2>
+        <div class="skills">
+          <div class="skill"><span>HTML</span><div class="progress"><i style="width:100%"></i></div></div>
+          <div class="skill"><span>CSS</span><div class="progress"><i style="width:90%"></i></div></div>
+          <div class="skill"><span>JavaScript</span><div class="progress"><i style="width:70%"></i></div></div>
+          <div class="skill"><span>GitHub</span><div class="progress"><i style="width:90%"></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="card">
+        <h2 class="section-title">Projet</h2>
+        <article class="project-card">
+          <h3>Plateforme de formation en ligne</h3>
+          <p>Ce projet vise à moderniser l'apprentissage dans l'Institut de Développement des Télécommunications<a href="https://idt.edu.sn/" target="_blank">(IDT)</a> en intégrant des formations en ligne. Il permet aux étudiants de suivre les cours d'informatique sans se déplacer.</p>
+          <p><strong>Technologies utilisées :</strong>HTML, CSS, JavaScript, etc. Outils informatiques adéquats</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="card">
+        <h2 class="section-title">Contact</h2>
+        <form id="contactForm" onsubmit="return handleSubmit(event)">
+          <label>Nom<input id="name" required /></label>
+          <label>Email<input id="email" type="email" required /></label>
+          <label>Message<textarea id="message" rows="5" required></textarea></label>
+          <button class="btn btn-primary" type="submit">Envoyer</button>
+          <div id="formStatus" class="status"></div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> — Moussa GUEYE</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
